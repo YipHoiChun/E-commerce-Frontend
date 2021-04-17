@@ -1,22 +1,16 @@
 <template>
   <div id="app">
-    <nav>
-      <div class="container">
-        <ul class="nav__left">
-          <li>
-            <router-link to="/">Home</router-link>
-          </li>
-          <li>
-            <router-link to="/admin">Admin</router-link>
-          </li>
-          <li>
-            <router-link to="/cart">Cart</router-link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <b-navbar type="dark" variant="dark">
+      <b-navbar-nav>
+        <b-nav-item to="/">Home</b-nav-item> 
+        <b-nav-item to="/admin">Admin</b-nav-item>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/cart">Cart</router-link>
+        </li>
+      </b-navbar-nav>
+    </b-navbar>
 
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
