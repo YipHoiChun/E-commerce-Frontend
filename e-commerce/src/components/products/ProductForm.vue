@@ -21,17 +21,18 @@
       </div>
       <div class="form-group">
         <label>Manufacturer</label>
-        <select
-          type="text"
-          class="form-control"
-          v-model="model.manufacturer"
-          name="manufacturer">
+        <select type="text" class="form-control" v-model="model.manufacturer" name="manufacturer">
           <template v-for="manufacturer in manufacturers">
-            <option :value="manufacturer._id" :selected="manufacturer._id == (model.manufacturer && model.manufacturer._id)">{{manufacturer.name}}</option>
+            <option
+              :key="manufacturer._id"
+              :value="manufacturer._id"
+              :selected="manufacturer._id == (model.manufacturer && model.manufacturer._id)"
+            >{{manufacturer.name}}</option>
           </template>
         </select>
       </div>
     </div>
+
 
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
       <div class="form-group">
