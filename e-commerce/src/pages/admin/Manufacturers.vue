@@ -3,7 +3,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th>制造商</th>
+          <th>Manufacturer</th>
           <th></th>
           <th></th>
         </tr>
@@ -11,8 +11,8 @@
       <tbody>
         <tr v-for="manufacturer in manufacturers" :key="manufacturer._id">
           <td>{{manufacturer.name}}</td>
-          <td class="modify"><router-link :to="'/admin/manufacturers/edit/' + manufacturer._id">修改</router-link></td>
-          <td class="remove"><a @click="removeManufacturer(manufacturer._id)" href="#">删除</a></td>
+          <td class="modify"><router-link :to="'/admin/manufacturers/edit/' + manufacturer._id">edit</router-link></td>
+          <td class="remove"><a @click="removeManufacturer(manufacturer._id)" href="#">remove</a></td>
         </tr>
       </tbody>
     </table>
