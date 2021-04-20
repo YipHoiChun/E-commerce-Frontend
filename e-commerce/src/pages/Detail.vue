@@ -5,6 +5,7 @@
 </template>
 
 <script>
+//git
 import ProductDetail from '@/components/products/ProductDetail.vue';
 export default {
   created() {
