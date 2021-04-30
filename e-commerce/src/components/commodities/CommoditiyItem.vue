@@ -8,7 +8,7 @@
         <p class="commoditiy.vendor">Vendor{{commoditiy.vendor.name}}</p>
         <img :src="commoditiy.image" alt="" class="commoditiy__image">
       </router-link>
-      <commoditiy-button :commoditiy="commodity"></commoditiy-button>
+      <!-- <commoditiy-button :commoditiy="commodity"></commoditiy-button> -->
     </div>
   </div>
 </template>
