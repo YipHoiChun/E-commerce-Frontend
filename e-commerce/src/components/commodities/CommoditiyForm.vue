@@ -60,12 +60,12 @@
          ></textarea>
       </div>
       <div class="form-group new-button">
-        <button class="button">
+        <b-button variant="primary" class="button">
           <i class="fa fa-pencil"></i>
           <!-- Conditional rendering for input text -->
           <span v-if="isEditing">Update Commoditiy</span>
           <span v-else>Add Commoditiy</span>
-        </button>
+        </b-button>
       </div>
     </div>
   </form>

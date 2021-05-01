@@ -11,12 +11,12 @@
     </div>
 
     <div class="form-group new-button">
-      <button class="button">
+      <b-button variant="primary" class="button">
         <i class="fa fa-pencil"></i>
         <!-- Conditional rendering for input text -->
         <span v-if="isEditing">Update Vendor</span>
         <span v-else>Add Vendor</span>
-      </button>
+      </b-button>
     </div>
   </form>
 </template>
