@@ -13,14 +13,7 @@
 </template>
 
 <style>
-.commoditiy {
-  border-bottom: 1px solid black;
-}ß
 
-.commoditiy__image {
-  width: 100px;
-  height: 100px;
-}
 </style>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button v-if="isAdding" class="button" @click="addToCart">Add to shopping cart</button>
-    <button v-else class="button" @click="removeFromCart(commoditiy._id)">Remove from shopping cart</button>
+    <b-button variant="primary" v-if="isAdding" class="button" @click="addToCart">Add to shopping cart</b-button>
+    <b-button variant="primary" v-else class="button" @click="removeFromCart(commoditiy._id)">Remove from shopping cart</b-button>
   </div>
 </template>
 
