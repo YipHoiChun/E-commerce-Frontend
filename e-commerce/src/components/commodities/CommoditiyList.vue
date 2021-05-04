@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="commodities">
-      <div class="container">This is CommoditiyList</div>
+      <!-- This is CommoditiyList -->
+      <div class="container">
+        <h1>Welcome to the online store</h1>
+      </div>
       <template v-for="commoditiy in commodities">
         <commoditiy-item
           :commoditiy="commoditiy"
@@ -13,7 +16,6 @@
 </template>
 
 <style>
-
 </style>
 
 <script>

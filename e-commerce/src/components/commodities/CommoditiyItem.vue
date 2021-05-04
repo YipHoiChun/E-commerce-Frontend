@@ -52,6 +52,8 @@
 .commoditiy__image {
   width: 50%;
   height: 50%;
+  border: 5px rgb(12, 82, 231) solid;
+
 }
 
 @media screen and (min-width: 601px) {
