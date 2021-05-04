@@ -8,7 +8,8 @@
           placeholder="Name"
           v-model="model.name"
           name="name"
-          class="form-control" />
+          class="form-control"
+        />
       </div>
       <div class="form-group">
         <label>Price</label>
@@ -17,7 +18,8 @@
           class="form-control"
           placeholder="Price"
           v-model="model.price"
-          name="price" />
+          name="price"
+        />
       </div>
       <div class="form-group">
         <label>Vendor</label>
@@ -25,15 +27,17 @@
           type="text"
           class="form-control"
           v-model="model.vendor"
-          name="vendor">
+          name="vendor"
+        >
           <template v-for="vendor in vendors">
             <option
               :key="vendor._id"
               :value="vendor._id"
               :selected="vendor._id == (model.vendor && model.vendor._id)"
-            >{{vendor.name}}</option>
+            >
+              {{ vendor.name }}
+            </option>
           </template>
-
         </select>
       </div>
     </div>
@@ -47,7 +51,8 @@
           placeholder="Image"
           v-model="model.image"
           name="image"
-          class="form-control" />
+          class="form-control"
+        />
       </div>
       <div class="form-group">
         <label>Description</label>
@@ -57,15 +62,15 @@
           rows="5"
           v-model="model.description"
           name="description"
-         ></textarea>
+        ></textarea>
       </div>
       <div class="form-group new-button">
-        <b-button variant="primary" class="button">
+        <button class="button">
           <i class="fa fa-pencil"></i>
           <!-- Conditional rendering for input text -->
           <span v-if="isEditing">Update Commoditiy</span>
           <span v-else>Add Commoditiy</span>
-        </b-button>
+        </button>
       </div>
     </div>
   </form>
@@ -73,11 +78,11 @@
 
 <script>
 export default {
-  props: ['model', 'vendors', 'isEditing'],
+  props: ["model", "vendors", "isEditing"],
   methods: {
     saveCommoditiy() {
-      this.$emit('save-commoditiy', this.model)
-    }
-  }
-}
+      this.$emit("save-commoditiy", this.model);
+    },
+  },
+};
 </script>
