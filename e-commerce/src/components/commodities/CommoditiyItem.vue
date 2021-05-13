@@ -5,7 +5,7 @@
       <p class="commoditiy__description">
         Description:{{ commoditiy.description }}
       </p>
-      <p class="commoditiy__price">Price : {{ commoditiy.price }}</p>
+      <p class="commoditiy__price">Price : ${{ commoditiy.price }}</p>
       <p class="commoditiy.vendor">Vendor : {{ commoditiy.vendor.name }}</p>
       <img :src="commoditiy.image" alt="" class="commoditiy__image" />
       <router-link :to="'/detail/' + commoditiy._id" class="commoditiy-link">

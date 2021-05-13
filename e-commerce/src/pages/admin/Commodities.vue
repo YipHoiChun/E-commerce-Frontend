@@ -13,7 +13,7 @@
       <tbody>
         <tr v-for="commoditiy in commodities" :key="commoditiy._id">
           <td>{{commoditiy.name}}</td>
-          <td>{{commoditiy.price}}</td>
+          <td>${{commoditiy.price}}</td>
           <td>{{commoditiy.vendor.name}}</td>
           <td class="modify"><router-link :to="'/admin/Edit/' + commoditiy._id">Edit</router-link></td>
           <td class="remove"><a @click="removeCommoditiy(commoditiy._id)" href="#">Remove</a></td>

@@ -22,6 +22,8 @@
             /></svg
         ></b-nav-item>
         <b-nav-item to="/admin">Admin</b-nav-item>
+        <b-nav-item to="/login">Login</b-nav-item>
+        <b-nav-item to="/register">Register</b-nav-item>
         <b-nav-item to="/cart"
           >Cart
           <svg

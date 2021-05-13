@@ -10,23 +10,6 @@
 </template>
 
 <style>
-/* commoditiy */
-.commoditiy {
-  border-bottom: 1px solid black;
-}
-
-.commoditiy__image  {
-  width: 100px;
-  height: 100px;
-}
-/* .product {
-  border-bottom: 1px solid black;
-}
-
-.product__image {
-  width: 100px;
-  height: 100px;
-} */
 </style>
 
 <script>

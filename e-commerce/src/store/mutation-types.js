@@ -1,6 +1,6 @@
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
-//allCommodities Commodities commoditiy
+
 export const all_commodities = 'all_commodities';
 export const all_commodities_success = 'all_commodities_success';
 
@@ -15,7 +15,7 @@ export const update_commoditiy_success = 'update_commoditiy_success';
 
 export const remove_commoditiy = 'remove_commoditiy';
 export const remove_commoditiy_success = 'remove_commoditiy_success';
-//Vendors vendors vendor
+
 export const all_vendors = 'all_vendors';
 export const all_vendors_success = 'all_vendors_success';
 

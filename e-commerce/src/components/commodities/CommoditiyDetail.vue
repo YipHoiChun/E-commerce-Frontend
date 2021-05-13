@@ -5,14 +5,14 @@
     </div>
     <div class="commoditiy-details__info">
       <div class="commoditiy-details__description">
-        <small>{{ commoditiy.vendor.name }}</small>
-        <h3>{{ commoditiy.name }}</h3>
+        <h4>Vendor: {{ commoditiy.vendor.name }}</h4>
+        <h3>Name: {{ commoditiy.name }}</h3>
         <p>
-          {{ commoditiy.description }}
+          Description: {{ commoditiy.description }}
         </p>
       </div>
       <div class="commoditiy-details__price-cart">
-        <p>{{ commoditiy.price }}</p>
+        <h4>Price: ${{ commoditiy.price }}</h4>
         <commoditiy-button :commoditiy="commoditiy"></commoditiy-button>
       </div>
     </div>
@@ -21,8 +21,17 @@
 
 <style>
 .commoditiy-details__image .image {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 50%;
+}
+.commoditiy__description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 </style>
 
