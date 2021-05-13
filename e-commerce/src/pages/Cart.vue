@@ -37,28 +37,4 @@ export default {
     },
   },
 };
-// import ProductItem from "@/components/products/ProductItem.vue";
-// export default {
-//   name: "home",
-//   data() {
-//     return {
-//       msg: "Welcome to the Cart Page",
-//     };
-//   },
-//   computed: {
-//     cart() {
-//       return this.$store.state.cart;
-//     },
-//   },
-//   components: {
-//     "product-item": ProductItem,
-//   },
-//   methods: {
-//     removeFromCart(productId) {
-//       this.$store.commit("REMOVE_FROM_CART", {
-//         productId,
-//       });
-//     },
-//   },
-// };
 </script>
