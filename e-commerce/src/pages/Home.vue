@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="title">
-      <h1>In Stock</h1>
+      <h1>Home</h1>
     </div>
-    <product-list></product-list>
+    <commoditiy-list></commoditiy-list>
   </div>
 </template>
 
 <script>
-import ProductList from '@/components/products/ProductList.vue';
+import CommoditiyList from '@/components/commodities/CommoditiyList.vue';
   export default {
     name: 'home',
     data () {
@@ -17,7 +17,7 @@ import ProductList from '@/components/products/ProductList.vue';
       };
     },
     components: {
-      'product-list': ProductList
+      'commoditiy-list': CommoditiyList
     }
   }
 </script>

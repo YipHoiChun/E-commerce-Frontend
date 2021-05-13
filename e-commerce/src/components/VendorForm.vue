@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="saveManufacturer">
+  <form @submit.prevent="saveVendor">
     <div class="form-group">
       <label>Name</label>
       <input
@@ -14,8 +14,8 @@
       <button class="button">
         <i class="fa fa-pencil"></i>
         <!-- Conditional rendering for input text -->
-        <span v-if="isEditing">Update Manufacturer</span>
-        <span v-else>Add Manufacturer</span>
+        <span v-if="isEditing">Update Vendor</span>
+        <span v-else>Add Vendor</span>
       </button>
     </div>
   </form>
@@ -25,8 +25,8 @@
 export default {
   props: ['model', 'isEditing'],
   methods: {
-    saveManufacturer() {
-      this.$emit('save-manufacturer', this.model)
+    saveVendor() {
+      this.$emit('save-vendor', this.model)
     }
   }
 }
